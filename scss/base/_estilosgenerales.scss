@@ -7,7 +7,7 @@
 // barra de navegacion
  
  .fondoNav {
-  background-color: rgb(163, 232, 117) !important;
+    background-image: linear-gradient(to left, rgb(249, 251, 253), rgb(184, 248, 194)) !important;
 }
 .fondoNav :hover {
   color: crimson;
@@ -16,11 +16,13 @@
 // contenido principal
 
 main{
+
     
+
     h1{
         @extend %estiloparrafo; 
             text-align: center;
-            font-style: italic;
+            font-style: italic;     
     }
     
     h2{
@@ -31,12 +33,12 @@ main{
     
 
     p{
-        @extend %estiloparrafo;   
+        @extend %estiloparrafo; 
+          
     } 
     
     .section-2{
         display: grid;
-        background-color: beige;
         justify-items: center;
         overflow: auto;
         min-height: 100%;
@@ -45,7 +47,6 @@ main{
         
         div{
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
             justify-items: center;
             align-items: center;
             text-align: center;
@@ -55,7 +56,6 @@ main{
     .section-3{
         display: grid;
         text-align: center;
-        background-color: aquamarine;
         line-height: 15px;
         padding: 1%;
         
@@ -80,12 +80,6 @@ main{
             padding: 1%;       
         }      
         
-        form{
-            display: grid;
-            justify-items: center;
-            line-height: 15px;
-            padding: 1%;
-        }
 
     } 
 
@@ -98,8 +92,10 @@ main{
     justify-content: center;
     align-items: center;
     overflow: auto;
-    background-image: linear-gradient(to right, rgb(255, 255, 0), rgb(183, 79, 10));
-    
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcrTHW3OmTRGhfRSPoKSZBJdmQB7Jihfv_UQ&usqp=CAU");
+    object-fit:cover cover;
+    background-position: center center;
+    background-size: contain;
 
     ul{
         list-style: none;
@@ -122,7 +118,6 @@ main{
 
         .section-2 {
             display: grid;
-            background-color: beige;
             justify-items: center;
             overflow: auto;
             }
@@ -146,14 +141,19 @@ main{
             grid-template-columns: auto;
             overflow: auto;
             text-align: center;
+            
         }
         .section-3 p {
             margin-top: 10px;
+            
         }
         
-        .section-3 form{
-            margin: 10px;
+        .form{
+            display: grid;
+            justify-items: center;
+           
         }
+        
     
     }
 }
@@ -161,6 +161,10 @@ main{
 // modo movil
 
 @media (max-width: 450px){
+
+    
+
+
     .footer{
         display: flex;
         justify-content: center;

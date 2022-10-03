@@ -1,6 +1,7 @@
 main .section-3 h3, main .section-3 h2, main p, main h2, main h1 {
   text-align: center;
   font-family: "Times New Roman", Times, serif;
+  background-image: linear-gradient(to right, rgb(249, 251, 253), rgb(184, 248, 194));
 }
 
 * {
@@ -10,7 +11,7 @@ main .section-3 h3, main .section-3 h2, main p, main h2, main h1 {
 }
 
 .fondoNav {
-  background-color: rgb(163, 232, 117) !important;
+  background-image: linear-gradient(to left, rgb(249, 251, 253), rgb(184, 248, 194)) !important;
 }
 
 .fondoNav :hover {
@@ -27,14 +28,12 @@ main h2 {
 }
 main .section-2 {
   display: grid;
-  background-color: beige;
   justify-items: center;
   overflow: auto;
   min-height: 100%;
 }
 main .section-2 div {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
   justify-items: center;
   align-items: center;
   text-align: center;
@@ -42,7 +41,6 @@ main .section-2 div {
 main .section-3 {
   display: grid;
   text-align: center;
-  background-color: aquamarine;
   line-height: 15px;
   padding: 1%;
 }
@@ -61,19 +59,16 @@ main .section-3 p {
   padding-top: 3%;
   padding: 1%;
 }
-main .section-3 form {
-  display: grid;
-  justify-items: center;
-  line-height: 15px;
-  padding: 1%;
-}
 
 .footer {
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: auto;
-  background-image: linear-gradient(to right, rgb(255, 255, 0), rgb(183, 79, 10));
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcrTHW3OmTRGhfRSPoKSZBJdmQB7Jihfv_UQ&usqp=CAU");
+  object-fit: cover cover;
+  background-position: center center;
+  background-size: contain;
 }
 .footer ul {
   list-style: none;
@@ -88,7 +83,6 @@ main .section-3 form {
 @media (max-width: 760px) {
   main .section-2 {
     display: grid;
-    background-color: beige;
     justify-items: center;
     overflow: auto;
   }
@@ -111,8 +105,9 @@ main .section-3 form {
   main .section-3 p {
     margin-top: 10px;
   }
-  main .section-3 form {
-    margin: 10px;
+  main .form {
+    display: grid;
+    justify-items: center;
   }
 }
 @media (max-width: 450px) {
